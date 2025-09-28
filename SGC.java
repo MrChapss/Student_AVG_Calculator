@@ -11,6 +11,6 @@ class SGC {
         Scanner input = new Scanner(System.in);
         
         System.out.print("Enter your grade here: ")
-        
+        int userInput = input.nextInt();
     }
 }
