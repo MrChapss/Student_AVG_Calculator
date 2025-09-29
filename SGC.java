@@ -39,9 +39,12 @@ class SGC {
             tryAgain = input.next();
 
             // add ako ng if incase na wala sa dalawa yung tinype ni user
-            //if 
+            if (!tryAgain.equals("Yes") && !tryAgain.equals("No")) {
+                System.out.printf("%n%nINVALID CHOICE!");
+                break;
+            } 
 
-        } while (tryAgain.equals("No"));
+        } while (!tryAgain.equals("No"));
         
         
     input.close();
