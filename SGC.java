@@ -11,16 +11,18 @@ class SGC {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int userHowManySub, userGrades;
+        String tryAgain;
         double totalAvg = 0;
-        
-        // mag add ako ng array na yung size ng array ay naka depende kay user
-        // Asking the user how many he/she have
-        System.out.print("How many subject do you have?: ");
-        userHowManySub = input.nextInt();
-        int[] userHMS = new int [userHowManySub];
-    
 
-        for (int i=0; i < userHMS.length; i++) {
+        do {
+
+        // Asking the user how many he/she have
+            System.out.print("How many subject do you have?: ");
+            userHowManySub = input.nextInt();
+            int[] userHMS = new int [userHowManySub];
+        
+
+            for (int i=0; i < userHMS.length; i++) {
 
             // User will input their grades in this scanner "userGrades"
             System.out.print("Input your grades: ");
@@ -28,8 +30,15 @@ class SGC {
 
             //Computation for getting the average based on the given grades
             totalAvg += userGrades / userHMS.length;
-        }
-        System.out.println("The AVG of your grades is : " + totalAvg);
+            }
+            
+            System.out.println("The AVG of your grades is : " + totalAvg);
+            
+            System.out.println("Do you want to try again? (Yes/No): ");
+            tryAgain = input.next();
+
+        } while (tryAgain != "Yes");
+        
         
         
     input.close();
