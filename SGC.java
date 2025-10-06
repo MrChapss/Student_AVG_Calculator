@@ -29,6 +29,7 @@ class SGC {
             System.out.printf("Input your grades: ");
             userGrades = input.nextDouble();
 
+            // merong BUG dto kasi kapag umuulit nag increase din yung value sa total
             //Computation for getting the average based on the given grades
             totalAvg += userGrades / (userHMS.length);
             }
