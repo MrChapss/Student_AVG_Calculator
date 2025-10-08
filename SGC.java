@@ -10,12 +10,12 @@ class SGC {
         // do while to repeat the program if the user input "Yes"
         do {
 
-        // Asking the user how many he/she have
+        // Asking the user how many he/she subjects
             System.out.printf("%nHow many subject do you have?: ");
             userHowManySub = input.nextInt();
             int[] userHMS = new int [userHowManySub];
         
-            // container of the user grades equivalent on how many subject did user put
+            // for loop to put the user input into userHMS(array)
             for (int i=0; i < userHMS.length; i++) {
 
             // User will input their grades in this scanner "userGrades"
