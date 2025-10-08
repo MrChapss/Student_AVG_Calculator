@@ -10,7 +10,7 @@ class SGC {
         // do while to repeat the program if the user input "Yes"
         do {
 
-        // Asking the user how many he/she subjects
+            // Asking the user how many he/she subjects
             System.out.printf("%nHow many subject do you have?: ");
             userHowManySub = input.nextInt();
             int[] userHMS = new int [userHowManySub];
@@ -43,7 +43,7 @@ class SGC {
                     break;
                 }
             }
-            // if no, it will end the program (since condition will be false == stop)
+        // if no, it will end the program (since condition will be false == stop)
         } while (!tryAgain.equalsIgnoreCase("No"));
         input.close();
     }
